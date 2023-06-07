@@ -1,0 +1,449 @@
+* {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+   
+    
+}
+body{ box-sizing: border-box;
+}
+
+/*header*/
+.header{ max-width: 1160px;
+    
+}
+.header_container{
+    min-height: 70px; 
+    
+   
+}
+ .header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+.header_menu{
+    margin-right: 100px;
+    
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu__list{ 
+display: flex;
+
+    
+}   
+
+.menu__item:not(:last-child){
+    margin: 0px 40px 0px 0px;
+}
+
+
+.menu__link {
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #000000;
+text-decoration: none;
+
+
+}
+li{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.price{
+    min-height: 33px;
+     max-width: 238px;
+   
+}
+.price__button{
+    font-family: 'Montserrat';
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #00B2E0;
+border-radius: 50px;
+border: none;
+padding: 10px 20px;
+}
+
+   /* Intro */ 
+main{
+    max-width: 1160px; 
+    
+}
+
+.page__main-block{
+    background-image:url(img/intro__image.png);
+    min-height: 328px;
+    margin-top: 4px;
+    
+
+} 
+.main__block-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+
+.main__block-title{
+font-family: Montserrat;
+font-style: Bold;
+font-size: 36px;
+line-height: 40px;
+
+}
+
+
+.link__site{
+    margin: 22px 0px 0px 0px;
+
+}
+.link__site-color{
+    text-decoration: none;
+    color: #00B2E0;
+}
+
+
+
+.link__site-text{
+font-family: Montserrat;
+font-style: normal;
+font-size: 12px;
+line-height: 15px;
+
+}
+/*INSTRUCTION CONTENT*/
+
+.instruction{
+    margin-top: 43px;
+  
+}
+.instruction__title{
+    font-family: Montserrat;
+font-style: Bold;
+Font-size: 32px;
+text-align: center;
+line-height: 40px;
+
+}
+
+    
+   
+
+.instruction__container{
+      display: flex; 
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.instruction__steps{
+    display: inline-block; 
+max-width: 547px;
+
+  
+}
+.instruction__steps-text{
+Font-family: Montserrat;
+Line-height: 24px;
+font-size: 20px;
+padding-top: 35px;
+
+
+}
+.instruction__qr{
+    display: block;
+    max-width: 421px;
+    margin: 0px;
+
+
+}
+.insruction__steps-image{
+    display: flex;
+   max-width: 421px;
+    
+}
+.insruction__steps-button{
+    display: flex;
+
+}
+.instruction__steps-description{
+    Font-family: Montserrat;
+Line-height: 24px;
+font-size: 14px;
+
+}
+
+.instruction__steps_2{
+
+    display: inline-block; 
+    max-width: 547px;
+    
+
+}
+
+.insruction__steps-buttons {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+
+/*NUMBER CHECK*/
+
+.aside__social {
+    max-width: 914px;
+    min-height: 72px;
+    background-color:#E5F5FB;
+   margin-top: 85px;
+   
+    
+}
+
+
+.aside__social-container {
+    display: flex;
+    padding: 15px 96px 15px 96px;
+    
+  
+}
+.aside__social-text {
+    Font-family: Montserrat;
+Line-height: 40px;
+font-size: 24px;
+
+}
+
+/*CHECKBOX*/
+.aside__social-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 40px;
+    
+  }
+  
+  /* Hide the browser's default checkbox */
+  .aside__social-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    
+  }
+  
+  
+  /* When the checkbox is checked, add a blue background */
+  .aside__social-checkbox input:checked ~ .checkmark {
+    background-color: #92E3A9;
+    border-radius: 3px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .aside__social-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .aside__social-checkbox .checkmark:after {
+    left: 7px;
+    top: 4.5px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3.5px 3.5px 0;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg)
+  }
+
+
+  /*FOOTER*/
+
+  .footer{
+    background-color: #3A4043;
+    margin-top: 104px;
+
+
+    
+  }
+  .footer__container{
+    max-width: 1160px;
+    padding-top: 50px;
+    
+
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+.footer-col-img {
+    margin-top: 22px;
+    
+    
+}
+
+.footer-col h4{
+    Font-family: Montserrat;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-transform:uppercase ;
+    Line-height: 22px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.footer-col a{
+    Font-size: 12px;
+Line-height: 16px;
+color: #FFFFFF;
+Font-family: Montserrat;
+text-decoration: none;
+
+}
+.section__footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+}
+.footer-col li{
+    margin-bottom: 14px;
+}
+
+
+.social__links {
+    margin-top: 34px;
+ 
+}
+
+.social__links i{
+    margin-right: 14px;
+    border: 1px #00B2E0;
+    border-radius:50px;
+    padding: 2px;
+    background: #00B2E0;
+    
+}
+ 
+.social__links a  {
+    display: block;
+    Font-size: 12px;
+    Line-height: 18px;
+    color: #FFFFFF;
+    Font-family: Montserrat;
+    text-decoration: none;
+    max-width: 229px;
+    margin-bottom: 14px;
+}
+
+.row__copyright{
+    background-color: #43464C;
+    height: 45px;
+    
+}
+
+
+.row__copyright-text{
+    max-width: 1160px;
+}
+.row__copyright-text p{
+    color: #FFFFFF;
+    font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+font-family: 'Montserrat';
+text-align: right;
+padding: 11px 0px 17px 0 ;
+
+}
+
+
+/* MEDIA */
+@media screen and (max-width:768px) {
+    .header, .footer{
+        visibility: hidden;
+    }
+    .main__block-container{
+        display: block;
+        align-items: center;
+        min-width: 768px;
+        margin: 0 109px 0 109px;
+    }
+    .main__block-image{
+        max-width: 375px;
+        margin: 0 109px 0 109px;
+       
+    }
+
+    .instruction__container{
+        display: block;
+        align-items: center;
+        margin: 0 84px 0 84px;
+    
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+  @media screen and (max-width:375px) {
+  }
